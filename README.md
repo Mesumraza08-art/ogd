@@ -13,5 +13,5 @@ Static site (HTML/CSS/JS) with one PHP endpoint (`api/quote.php`) for the quote 
 
 ## After deploying
 - Create the mailbox `no-reply@ogdelectric.ca` in hPanel (Emails), or change `FROM_EMAIL` in `api/quote.php` to an existing mailbox on the domain. `TO_EMAIL` is where quote requests are delivered.
-- Enable SSL for the domain in hPanel. `.htaccess` redirects everything to `https://www.`.
+- Enable SSL for the domain in hPanel. `.htaccess` forces HTTPS on any domain and adds `www.` only for `ogdelectric.ca`.
 - Test the form on `/contact/`.
